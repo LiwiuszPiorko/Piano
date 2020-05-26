@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #3262a8;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.piano{
+    display: flex;
+}
+.white{
+    width: 8em;
+    height: 40vh;
+    background-color: ghostwhite;
+    border: 1px solid #1e2026;
+}
+
+.white.active{
+background-color: #e1e1e6;
+}
+
+.black{
+    width: 4em;
+    height: 25vh;
+    background-color: black;
+    margin-left:-2em;
+    margin-right:-2em;
+    z-index: 2;
+    -webkit-box-shadow: 8px 7px 4px -4px rgba(0,0,0,0.69);
+    -moz-box-shadow: 8px 7px 4px -4px rgba(0,0,0,0.69);
+    box-shadow: 8px 7px 4px -4px rgba(0,0,0,0.69);
+
+}
+.black.active{
+    box-shadow: none;
+}
+.white.shadow {
+    -moz-box-shadow:    inset 0 0 10px #000000;
+    -webkit-box-shadow: inset 0 0 10px #000000;
+    box-shadow:         inset 0 0 10px #000000;
+ }
+ /* respons */
+
+ @media(min-width:240px){
+    .white{
+        width: 2em;
+        height: 60vh;
+    }
+    .black{
+        width: 1em;
+        margin-left:-0.5em;
+        margin-right:-0.5em;
+        height: 35vh; 
+    }
+
+ }
+ @media(min-width:360px){
+    .white{
+        width: 3em;
+        height: 50vh;
+    }
+    .black{
+        width: 2em;
+        margin-left:-1em;
+        margin-right:-1em;
+        height: 35vh; 
+    }
+
+ }
+ @media(min-width:411px){
+    .white{
+        width: 3em;
+        height: 40vh;
+    }
+    .black{
+        width: 2em;
+        margin-left:-1em;
+        margin-right:-1em;
+        height: 25vh; 
+    }
+
+ }
+ @media(min-width:800px){
+    .white{
+        width: 4.5em;
+        height: 40vh;
+    }
+    .black{
+        width: 2em;
+        margin-left:-1em;
+        margin-right:-1em;
+        height: 25vh; 
+    }
+
+ }
+ @media(min-width:1280px){
+    .white{
+        width: 5.5em;
+        height: 40vh;
+    }
+    .black{
+        width: 3em;
+        margin-left:-1.5em;
+        margin-right:-1.5em;
+        height: 25vh; 
+    }
+
+ }
